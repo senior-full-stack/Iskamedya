@@ -22,7 +22,7 @@
 
 <?php $this->section("section_scripts");
     $this->parent(); ?>
-    <script type="text/javascript" src="assets/dash/dash.all.min.js"></script>
+    <script type="text/javascript" src="/assets/dash/dash.all.min.js"></script>
     <script type="text/javascript">
         function broadcastLiveVideo(videoUrl) {
             $('#modalLiveVideoBody').append('<video id="videoLiveVideo" style="width: 100%;height: 100%;" controls="true"></video>');

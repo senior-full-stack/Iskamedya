@@ -2,7 +2,7 @@
     return array(
         //Routes
         "MemberLoginRoute"  => array(
-            $this->get("/project/memberLoginPrefix") . "(/@action(/@id))",
+            $this->get("project/memberLoginPrefix") . "(/@action(/@id))",
             array(
                 "prefix"     => "",
                 "controller" => "Member",
@@ -10,7 +10,7 @@
             )
         ),
         "BayiRoute"         => array(
-            $this->get("/project/resellerPrefix") . "(/@controller(/@action(/@id)))",
+            $this->get("project/resellerPrefix") . "(/@controller(/@action(/@id)))",
             array(
                 "prefix"     => "Bayi",
                 "controller" => "Home",
@@ -18,7 +18,7 @@
             )
         ),
         "AdminPluginsRoute" => array(
-            $this->get("/project/adminPrefix") . "/plugins" . "(/@controller(/@action(/@id)))",
+            $this->get("project/adminPrefix") . "/plugins" . "(/@controller(/@action(/@id)))",
             array(
                 "prefix"     => "Admin/Plugins",
                 "controller" => "Home",
@@ -26,7 +26,7 @@
             )
         ),
         "AdminRoute"        => array(
-            $this->get("/project/adminPrefix") . "(/@controller(/@action(/@id)))",
+            $this->get("project/adminPrefix") . "(/@controller(/@action(/@id)))",
             array(
                 "prefix"     => "Admin",
                 "controller" => "Home",

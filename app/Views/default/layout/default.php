@@ -15,13 +15,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-paper.min.css">
-    <link type="text/css" rel="stylesheet" href="assets/lightgallery/dist/css/lightgallery.min.css"/>
-    <link rel="stylesheet" href="assets/scripts/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen"/>
-    <link rel="stylesheet" href="assets/style/font-awesome.min.css" type="text/css" media="screen"/>
-    <link rel="stylesheet" href="assets/style/paper.css?v=v3.1.0">
-    <link rel="stylesheet" href="assets/nprogress/nprogress.css">
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-paper.min.css">
+    <link type="text/css" rel="stylesheet" href="/assets/lightgallery/dist/css/lightgallery.min.css"/>
+    <link rel="stylesheet" href="/assets/scripts/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="/assets/style/font-awesome.min.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="/assets/style/paper.css?v=v3.1.0">
+    <link rel="stylesheet" href="/assets/nprogress/nprogress.css">
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon"/>
     <meta name="google-site-verification" content="u1DkZYeRYUH11kBL2eVX0Pijh_4POa4SboP_EvMLq_4"/>
     <title><?php if($this->has('title')) {
             echo $this->get('title') . " | ";
@@ -38,7 +38,7 @@
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header pull-left">
-                <a class="navbar-brand" href="<?php echo $logonPerson->isLoggedIn() ? '/tools' : '/'; ?>"><img alt="instagram takip" src="assets/images/logo.png"/></a>
+                <a class="navbar-brand" href="<?php echo $logonPerson->isLoggedIn() ? '/tools' : '/'; ?>"><img alt="instagram takip" src="/assets/images/logo.png"/></a>
             </div>
             <div class="navbar-header pull-right">
                 <ul class="nav navbar-nav pull-left">
@@ -66,7 +66,7 @@
                         </li>
                         <li class="pull-right">
                             <a href="/messages" title="Mesaj Kutum" style="text-transform: none;">
-                                <img src="assets/images/direct_icon.png" style="max-height:30px;">
+                                <img src="/assets/images/direct_icon.png" style="max-height:30px;">
                                 <span class="badge<?php echo isset($_SESSION["NonReadThreadCount"]) && intval($_SESSION["NonReadThreadCount"]) > 0 ? '' : ' hidden'; ?>" id="nonReadThreadCount"><?php echo isset($_SESSION["NonReadThreadCount"]) ? $_SESSION["NonReadThreadCount"] : 0; ?></span>
                             </a>
                         </li>
@@ -129,7 +129,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <img class="img-responsive" src="assets/images/logo.png"/>
+                <img class="img-responsive" src="/assets/images/logo.png"/>
                 <p>
                     <a href="<?php echo (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http') . "://" . $_SERVER['SERVER_NAME']; ?>">instagram beğeni ve takipçi sitesi</a>
                 </p>
@@ -195,14 +195,14 @@
 </div>
 <?php $this->show(); ?>
 <?php $this->section('section_scripts'); ?>
-<script src="assets/jquery/2.2.4/jquery.min.js"></script>
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="assets/scripts/fancybox/source/jquery.fancybox.pack.js"></script>
-<script src="assets/lightgallery/dist/js/lightgallery.min.js"></script>
-<script src="assets/lightgallery/dist/js/lg-video.min.js"></script>
-<script src="assets/lazyload/jquery.lazyload.min.js"></script>
-<script src="assets/nprogress/nprogress.js"></script>
-<script src="assets/core/core.js?v=3.1.10"></script>
+<script src="/assets/jquery/2.2.4/jquery.min.js"></script>
+<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="/assets/scripts/fancybox/source/jquery.fancybox.pack.js"></script>
+<script src="/assets/lightgallery/dist/js/lightgallery.min.js"></script>
+<script src="/assets/lightgallery/dist/js/lg-video.min.js"></script>
+<script src="/assets/lazyload/jquery.lazyload.min.js"></script>
+<script src="/assets/nprogress/nprogress.js"></script>
+<script src="/assets/core/core.js?v=3.1.10"></script>
 <?php $this->show(); ?>
 <script type="text/javascript">
     <?php if(Wow::has("ayar/googleanalyticscode") != "") { ?>

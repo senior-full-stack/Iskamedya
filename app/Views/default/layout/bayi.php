@@ -15,10 +15,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-paper.min.css">
-    <link rel="stylesheet" href="assets/style/font-awesome.min.css" type="text/css" media="screen"/>
-    <link rel="stylesheet" href="assets/style/paper.css?v=2.1">
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-paper.min.css">
+    <link rel="stylesheet" href="/assets/style/font-awesome.min.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="/assets/style/paper.css?v=2.1">
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon"/>
     <title><?php if($this->has('title')) {
             echo $this->get('title') . " | ";
         }
@@ -34,14 +34,14 @@
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header pull-left">
-                <a class="navbar-brand" href="/bayi"><img alt="instagram takip" src="assets/images/logo.png"/></a>
+                <a class="navbar-brand" href="/bayi"><img alt="instagram takip" src="/assets/images/logo.png"/></a>
             </div>
             <div class="navbar-header pull-right">
                 <?php if($logonPerson->isLoggedIn()) { ?>
                     <ul class="nav navbar-nav pull-left">
                         <li class="dropdown pull-right">
                             <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" style="text-transform: none;">
-                                <img src="assets/images/avatar.jpg" style="max-height:30px;"> <?php echo (strlen($uyelik["username"]) > 10) ? substr($uyelik["username"], 0, 5) . ".." : $uyelik["username"]; ?>
+                                <img src="/assets/images/avatar.jpg" style="max-height:30px;"> <?php echo (strlen($uyelik["username"]) > 10) ? substr($uyelik["username"], 0, 5) . ".." : $uyelik["username"]; ?>
                                 <span class="caret"></span></a>
                             <ul role="menu" class="dropdown-menu dropdown-light fadeInUpShort">
                                 <li><a href="/bayi/account/logout" class="menu-toggler"> Çıkış Yap </a></li>
@@ -115,8 +115,8 @@
 </div>
 <?php $this->show(); ?>
 <?php $this->section('section_scripts'); ?>
-<script src="assets/jquery/2.2.4/jquery.min.js"></script>
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="/assets/jquery/2.2.4/jquery.min.js"></script>
+<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
 <?php $this->show(); ?>
 <?php if(Wow::has("ayar/googleanalyticscode") && Wow::get("ayar/googleanalyticscode") != "") { ?>
     <script type="text/javascript">

