@@ -66,7 +66,7 @@
                         </li>
                         <li class="pull-right">
                             <a href="/messages" title="Mesaj Kutum" style="text-transform: none;">
-                                <img src="/assets/images/direct_icon.png" style="max-height:30px;">
+                                <i class="fa fa-comments"></i>
                                 <span class="badge<?php echo isset($_SESSION["NonReadThreadCount"]) && intval($_SESSION["NonReadThreadCount"]) > 0 ? '' : ' hidden'; ?>" id="nonReadThreadCount"><?php echo isset($_SESSION["NonReadThreadCount"]) ? $_SESSION["NonReadThreadCount"] : 0; ?></span>
                             </a>
                         </li>

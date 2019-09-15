@@ -18,6 +18,21 @@ bodyLogged {
     padding : 10px;
 }
 
+.nav-creditbar > li > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-creditbar > li > a > i {
+    margin-right: 5px; 
+}
+
+.nav-creditbar > li > a:hover {
+    border-radius: 5px;
+}
+
+
 @media (min-width : 768px) {
     .navbar-collapse {
         clear : none !important;
@@ -72,14 +87,22 @@ label {
 .navbar-brand {
     padding : 0 24px 0 15px;
     height  : 64px;
+    display: flex;
+    align-items: center;
+    align-content: center;
 }
 
 .navbar-brand img {
-    max-height : 100%;
+    max-height : 80%;
 }
 
 .navbar-nav {
     margin : 0;
+}
+
+.navbar-nav > li {
+    width: 100px;
+    text-align: center;
 }
 
 .navbar-nav > li > a {
@@ -100,14 +123,8 @@ label {
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color       : #FFFFFF !important;
-    text-shadow : 1px 1px 1px #383838;
-                /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fba741+0,d92e7e+50,7f48c0+100 */
-    background  : #FBA741; /* Old browsers */
-    background  : -moz-linear-gradient(45deg, #FBA741 0%, #D92E7E 50%, #7F48C0 100%); /* FF3.6-15 */
-    background  : -webkit-linear-gradient(45deg, #FBA741 0%, #D92E7E 50%, #7F48C0 100%); /* Chrome10-25,Safari5.1-6 */
-    background  : linear-gradient(45deg, #FBA741 0%, #D92E7E 50%, #7F48C0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter      : progid:DXImageTransform.Microsoft.gradient(startColorstr='#fba741', endColorstr='#7f48c0', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+    color       : #fff !important;
+    background-color: #4caf50;
 }
 
 .navbar-default .navbar-nav > li.navbar-icon > a:hover, .navbar-default .navbar-nav > li.navbar-icon > a:focus {
@@ -119,6 +136,10 @@ label {
 p.navbar-text {
     margin      : 0;
     line-height : 64px;
+}
+
+.pull-right > a > i {
+    font-size: 3rem !important
 }
 
 button.navbar-toggle {
@@ -171,11 +192,22 @@ button.navbar-toggle {
 .nav-accountbar > li > a {
     margin-bottom : 0;
     color         : #9C9C9C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-accountbar > li > a > i{
+    margin-right: 5px;
 }
 
 .nav-accountbar > li > a:hover, .nav-accountbar > li.active > a {
     color            : #666666;
     background-color : #EEEEEE;
+}
+
+.bg-creditbar {
+    margin-top: 10px;
 }
 
 @media (min-width : 768px) {
