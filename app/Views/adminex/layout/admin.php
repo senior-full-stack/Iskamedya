@@ -68,7 +68,7 @@
 
             <!--sidebar nav start-->
             <ul class="nav nav-pills nav-stacked custom-nav">
-                <li<?php if($controllerName == "Admin/Home") { ?> class="active"<?php } ?>>
+                <li <?php if($controllerName == "Admin/Home") { ?> class="active"<?php } ?>>
                     <a href="<?php echo Wow::get("project/adminPrefix"); ?>"><i class="fa fa-home"></i>
                         <span>Anasayfa</span></a>
                 </li>
@@ -76,9 +76,9 @@
                     <a href="<?php echo Wow::get("project/adminPrefix"); ?>/settings"><i class="fa fa-cog"></i>
                         <span>Ayarlar</span></a>
                     <ul class="sub-menu-list">
-                        <li<?php if($controllerName == "Admin/Settings" && $actionName == "Index") { ?>  class="active"<?php } ?>>
+                        <li <?php if($controllerName == "Admin/Settings" && $actionName == "Index") { ?>  class="active"<?php } ?>>
                             <a href="<?php echo Wow::get("project/adminPrefix"); ?>/settings"> Sistem Tanımları</a></li>
-                        <li<?php if($controllerName == "Admin/Settings" && $actionName == "Cron") { ?>  class="active"<?php } ?>>
+                        <li <?php if($controllerName == "Admin/Settings" && $actionName == "Cron") { ?>  class="active"<?php } ?>>
                             <a href="<?php echo Wow::get("project/adminPrefix"); ?>/settings/cron"> Cronlar</a></li>
                     </ul>
                 </li>
@@ -86,35 +86,35 @@
                     <a href="<?php echo Wow::get("project/adminPrefix"); ?>/islemler"><i class="fa fa-flash"></i>
                         <span>Araçlar</span></a>
                     <ul class="sub-menu-list">
-                        <li<?php if($controllerName == "Admin/Islemler" && $actionName == "Index") { ?>  class="active"<?php } ?>>
+                        <li <?php if($controllerName == "Admin/Islemler" && $actionName == "Index") { ?>  class="active"<?php } ?>>
                             <a href="<?php echo Wow::get("project/adminPrefix"); ?>/islemler"> Pasif Kullanıcı Temizleme</a>
                         </li>
-                        <li<?php if($controllerName == "Admin/Islemler" && $actionName == "CinsiyetTespit") { ?>  class="active"<?php } ?>>
+                        <li <?php if($controllerName == "Admin/Islemler" && $actionName == "CinsiyetTespit") { ?>  class="active"<?php } ?>>
                             <a href="<?php echo Wow::get("project/adminPrefix"); ?>/islemler/cinsiyet-tespit"> Cinsiyet Tespiti</a>
                         </li>
-                        <li<?php if($controllerName == "Admin/Islemler" && $actionName == "AddUserPass") { ?>  class="active"<?php } ?>>
+                        <li <?php if($controllerName == "Admin/Islemler" && $actionName == "AddUserPass") { ?>  class="active"<?php } ?>>
                             <a href="<?php echo Wow::get("project/adminPrefix"); ?>/islemler/add-user-pass"> User:Pass Aktarma</a>
                         </li>
-                        <li<?php if($controllerName == "Admin/Islemler" && $actionName == "AddCookies") { ?>  class="active"<?php } ?>>
+                        <li <?php if($controllerName == "Admin/Islemler" && $actionName == "AddCookies") { ?>  class="active"<?php } ?>>
                             <a href="<?php echo Wow::get("project/adminPrefix"); ?>/islemler/add-cookies"> Cookie Aktarma</a>
                         </li>
-                        <li<?php if($controllerName == "Admin/Wizard" && $actionName == "Import") { ?>  class="active"<?php } ?>>
+                        <li <?php if($controllerName == "Admin/Wizard" && $actionName == "Import") { ?>  class="active"<?php } ?>>
                             <a href="<?php echo Wow::get("project/adminPrefix"); ?>/wizard/import"> İmport Data</a></li>
-                        <li<?php if($controllerName == "Admin/Wizard" && $actionName == "Export") { ?>  class="active"<?php } ?>>
+                        <li <?php if($controllerName == "Admin/Wizard" && $actionName == "Export") { ?>  class="active"<?php } ?>>
                             <a href="<?php echo Wow::get("project/adminPrefix"); ?>/wizard/export"> Export Data</a></li>
                     </ul>
                 </li>
-                <li<?php if($controllerName == "Admin/Bakim") { ?> class="active"<?php } ?>>
+                <li  <?php if($controllerName == "Admin/Bakim") { ?> class="active"<?php } ?>>
                     <a href="<?php echo Wow::get("project/adminPrefix"); ?>/bakim"><i class="fa fa-wrench"></i>
-                        <span>Bakım</span></a>
+                        Bakım</a>
                 </li>
                 <li class="menu-list<?php if($controllerName == "Admin/Insta") { ?> nav-active<?php } ?>">
                     <a href="<?php echo Wow::get("project/adminPrefix"); ?>/insta"><i class="fa fa-instagram"></i>
                         <span>Instagram İşlemleri</span></a>
                     <ul class="sub-menu-list">
-                        <li<?php if($controllerName == "Admin/Insta" && $actionName == "Index") { ?>  class="active"<?php } ?>>
+                        <li <?php if($controllerName == "Admin/Insta" && $actionName == "Index") { ?>  class="active"<?php } ?>>
                             <a href="<?php echo Wow::get("project/adminPrefix"); ?>/insta"> Yeni İşlem</a></li>
-                        <li<?php if($controllerName == "Admin/Insta" && $actionName == "AutoLikePackages") { ?>  class="active"<?php } ?>>
+                        <li <?php if($controllerName == "Admin/Insta" && $actionName == "AutoLikePackages") { ?>  class="active"<?php } ?>>
                             <a href="<?php echo Wow::get("project/adminPrefix"); ?>/insta/auto-like-packages"> Oto Beğeni Paketleri</a>
                         </li>
                     </ul>
@@ -125,26 +125,26 @@
                             <span>Özel Eklentiler</span></a>
                         <ul class="sub-menu-list">
                             <?php foreach(Wow::get("project/plugins") as $k => $v) { ?>
-                                <li<?php if($controllerName == "Admin/Plugins/" . $k) { ?>  class="active"<?php } ?>>
+                                <li <?php if($controllerName == "Admin/Plugins/" . $k) { ?>  class="active"<?php } ?>>
                                     <a href="<?php echo Wow::get("project/adminPrefix"); ?>/plugins/<?php echo $v["slug"]; ?>"> <?php echo $v["name"]; ?></a>
                                 </li>
                             <?php } ?>
                         </ul>
                     </li>
                 <?php } ?>
-                <li<?php if($controllerName == "Admin/Uyeler") { ?> class="active"<?php } ?>>
+                <li <?php if($controllerName == "Admin/Uyeler") { ?> class="active"<?php } ?>>
                     <a href="<?php echo Wow::get("project/adminPrefix"); ?>/uyeler"><i class="fa fa-users"></i>
                         <span>Üyeler</span></a>
                 </li>
-                <li<?php if($controllerName == "Admin/Sayfalar") { ?> class="active"<?php } ?>>
+                <li <?php if($controllerName == "Admin/Sayfalar") { ?> class="active"<?php } ?>>
                     <a href="<?php echo Wow::get("project/adminPrefix"); ?>/sayfalar"><i class="fa fa-file"></i>
                         <span>Sayfalar</span></a>
                 </li>
-                <li<?php if($controllerName == "Admin/Blog") { ?> class="active"<?php } ?>>
+                <li <?php if($controllerName == "Admin/Blog") { ?> class="active"<?php } ?>>
                     <a href="<?php echo Wow::get("project/adminPrefix"); ?>/blog"><i class="fa fa-files-o"></i>
                         <span>Blog</span></a>
                 </li>
-                <li<?php if($controllerName == "Admin/Bayilik") { ?> class="active"<?php } ?>>
+                <li <?php if($controllerName == "Admin/Bayilik") { ?> class="active"<?php } ?>>
                     <a href="<?php echo Wow::get("project/adminPrefix"); ?>/bayilik"><i class="fa fa-thumbs-o-up"></i>
                         <span>Bayiler</span></a>
                 </li>

@@ -9,7 +9,7 @@ Author: ThemeBucket
 @import url('custom-ico-fonts.css');
 
 body {
-    background  : #424F63;
+    
     font-family : 'Open Sans', sans-serif;
     color       : #7A7676;
     line-height : 20px;
@@ -191,6 +191,8 @@ hr {
     height     : 100%;
     overflow-y : auto;
     z-index    : 100;
+    background: black;
+    opacity: 0.9;
 }
 
 .sticky-left-side .custom-nav {
@@ -289,7 +291,7 @@ hr {
 }
 
 .custom-nav > li > a {
-    color                 : #FFFFFF;
+    color                 : gray;
     padding               : 12px 20px;
     border-radius         : 0;
     -webkit-border-radius : 0;
@@ -297,25 +299,27 @@ hr {
 
 .custom-nav > li > a:hover,
 .custom-nav > li > a:active {
-    background-color      : #353F4F;
-    color                 : #65CEA7;
+    background-color      : #4e4848;
+    color                 : white;
     border-radius         : 0;
     -webkit-border-radius : 0;
 }
 
 .custom-nav > li.menu-list > a {
     background : transparent url(../images/plus-white.png) no-repeat 93% center;
+    color: gray;
 }
 
 .custom-nav > li.menu-list > a:hover {
-    background-color : #353F4F;
+    background-color      : #4e4848;
     background-image : url(../images/plus.png);
+    color: white;
 }
 
 .custom-nav > li.nav-active > a {
-    background-color : #353F4F;
+    background-color      : black;
     background-image : url(../images/minus.png);
-    color            : #65CEA7;
+    color            : white;
 }
 
 .custom-nav > li.nav-active > ul {
@@ -329,8 +333,8 @@ hr {
 .custom-nav > li.active > a,
 .custom-nav > li.active > a:hover,
 .custom-nav > li.active > a:focus {
-    background-color : #353F4F;
-    color            : #65CEA7;
+    background-color      : gray;
+    color            : white;
 }
 
 .custom-nav > li.menu-list.active > a {
@@ -358,11 +362,12 @@ hr {
     display    : none;
     margin     : 0;
     padding    : 0;
-    background : #353F4F;
+    background : black;
+    color: gray;
 }
 
 .custom-nav .sub-menu-list > li > a {
-    color              : #FFFFFF;
+    color              : gray;
     font-size          : 13px;
     display            : block;
     padding            : 10px 5px 10px 50px;
@@ -375,8 +380,8 @@ hr {
 .custom-nav .sub-menu-list > li > a:active,
 .custom-nav .sub-menu-list > li > a:focus {
     text-decoration : none;
-    color           : #65CEA7;
-    background      : #2A323F;
+    color           : white;
+    background      : #8d8d8d;
 }
 
 .custom-nav .sub-menu-list > li .fa {
@@ -389,8 +394,8 @@ hr {
 }
 
 .custom-nav .sub-menu-list > li.active > a {
-    color            : #65CEA7;
-    background-color : #2A323F;
+    color            : white;
+    background-color : #4e4848;
 }
 
 .custom-nav .sub-menu-list ul {
@@ -479,7 +484,6 @@ h5.left-nav-title {
 .left-side-collapsed .custom-nav .menu-list.nav-active ul {
     display : none;
 }
-
 .left-side-collapsed .custom-nav .menu-list.nav-hover ul {
     display : block;
 }
@@ -559,16 +563,14 @@ h5.left-nav-title {
     cursor             : pointer;
     float              : left;
     color              : #212121;
-    border-right       : 1px solid #E7E7E7;
     -moz-transition    : all 0.2s ease-out 0s;
     -webkit-transition : all 0.2s ease-out 0s;
     transition         : all 0.2s ease-out 0s;
 }
 
 .toggle-btn:hover {
-    background         : #65CEA7;
+    background         : black;
     color              : #FFFFFF;
-    border-right-color : #65CEA7;
 }
 
 .searchform input {
@@ -579,13 +581,16 @@ h5.left-nav-title {
     margin     : 7px 0 0 10px;
     padding    : 10px;
     width      : 220px;
+    background: gray;
+    border: 1px solid gray;
 }
 
 .searchform input:focus {
     -moz-box-shadow    : none;
     -webkit-box-shadow : none;
     box-shadow         : none;
-    border-color       : #DDDDDD;
+    border-color       : black;
+    color: white;
 }
 
 .menu-right {
@@ -609,11 +614,13 @@ h5.left-nav-title {
 
 .notification-menu .dropdown-toggle {
     padding               : 12px 10px;
-    border-color          : #FFFFFF;
-    background            : #FFFFFF;
+    border-color          : black;
+    background            : black;
+    opacity: 0.9;
     -moz-border-radius    : 0;
     -webkit-border-radius : 0;
     border-radius         : 0;
+    color: gray;
     border                : none;
 }
 
@@ -622,11 +629,12 @@ h5.left-nav-title {
 .notification-menu .dropdown-toggle:active,
 .notification-menu .dropdown-toggle.active,
 .notification-menu .open .dropdown-toggle.dropdown-toggle {
-    background         : #424F63;
-    color              : #65CEA7;
+    background         :black;
+    color              : white;
     -moz-box-shadow    : none;
     -webkit-box-shadow : none;
     box-shadow         : none;
+    opacity: 0.9;
 }
 
 .notification-menu .dropdown-toggle img {
@@ -717,7 +725,8 @@ h5.left-nav-title {
 }
 
 .notification-menu .dropdown-menu-usermenu {
-    background : #65CEA7;
+    background : black;
+    opacity:0.8;
     min-width  : 200px;
 }
 
@@ -849,7 +858,8 @@ h5.left-nav-title {
     left       : 0;
     width      : 240px;
     z-index    : 100;
-    background : #424F63;
+    background : black;
+    opacity: 0.7;
 
 }
 
@@ -863,6 +873,8 @@ h5.left-nav-title {
     left     : 240px;
     width    : 100%;
     z-index  : 100;
+    background: black;
+    opacity: 0.7;
 }
 
 .sticky-header .main-content {
