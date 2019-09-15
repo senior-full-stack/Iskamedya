@@ -8,7 +8,7 @@
 <div class="entry-layout col-lg-4 col-md-4 col-sm-6 col-xs-12" id="entry<?php echo $item["id"]; ?>">
     <div class="entry-thumb transition">
         <div class="entry-media">
-            <div class="carousel-area"><img src="/assets/images/carousel.png"></div>
+            <div class="carousel-area"><img src="assets/images/carousel.png"></div>
             <div class="image">
                 <a data-fancybox="gallery" href="<?php echo $item["carousel_media"][0]["media_type"]==2 ? str_replace("http:", "https:", $item["carousel_media"][$i]["video_versions"][0]["url"]) :  str_replace("http:", "https:", $item["carousel_media"][0]["image_versions2"]["candidates"][0]["url"]); ?>">
                     <img class="img-responsive" src="<?php echo str_replace("http:", "https:", $item["carousel_media"][0]["image_versions2"]["candidates"][0]["url"]); ?>"/>

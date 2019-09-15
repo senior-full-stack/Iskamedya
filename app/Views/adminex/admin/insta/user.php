@@ -74,7 +74,7 @@
 
 <?php $this->section("section_head");
     $this->parent(); ?>
-<link rel="stylesheet" href="/assets/fancybox/jquery.fancybox.min.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="assets/fancybox/jquery.fancybox.min.css" type="text/css" media="screen"/>
 <?php $this->endSection(); ?>
 
 <?php $this->section("section_modals");
@@ -146,7 +146,7 @@
 
 <?php $this->section("section_scripts");
     $this->parent(); ?>
-<script src="/assets/fancybox/jquery.fancybox.min.js"></script>
+<script src="assets/fancybox/jquery.fancybox.min.js"></script>
 <script type="text/javascript">
     function loadMore(maxID) {
         $('#btnLoadMore').remove();

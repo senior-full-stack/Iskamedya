@@ -13,7 +13,7 @@
         <div class="entry-layout col-lg-4 col-md-4 col-sm-6 col-xs-12" id="entry<?php echo $item["id"]; ?>">
             <div class="entry-thumb transition">
                 <div class="entry-media">
-                    <div class="carousel-area"><img src="/assets/images/carousel.png" style="position: absolute;top: -5px;left: -5px;"></div>
+                    <div class="carousel-area"><img src="assets/images/carousel.png" style="position: absolute;top: -5px;left: -5px;"></div>
                     <?php if($accountInfo["user"]["pk"] != $item["user"]["pk"]) { ?>
                         <div class="text-absolute">
                             <a href="/user/<?php echo $item["user"]["pk"]; ?>"><img class="img-circle lazy" style="max-width:24px;" data-original="<?php echo str_replace("http:", "https:", $item["user"]["profile_pic_url"]); ?>"/>

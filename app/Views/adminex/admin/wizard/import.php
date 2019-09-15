@@ -57,17 +57,17 @@
 
 <?php $this->section("section_head");
     $this->parent(); ?>
-<link rel="stylesheet" href="/assets/jquery-file-upload/css/jquery.fileupload.css"/>
+<link rel="stylesheet" href="assets/jquery-file-upload/css/jquery.fileupload.css"/>
 <?php $this->endSection(); ?>
 
 <?php $this->section("section_scripts");
     $this->parent(); ?>
-<script src="/assets/load-image/load-image.all.min.js"></script>
-<script src="/assets/canvas-to-blob/canvas-to-blob.min.js"></script>
-<script src="/assets/jquery-file-upload/js/vendor/jquery.ui.widget.js"></script>
-<script src="/assets/jquery-file-upload/js/jquery.iframe-transport.js"></script>
-<script src="/assets/jquery-file-upload/js/jquery.fileupload.js"></script>
-<script src="/assets/jquery-file-upload/js/jquery.fileupload-process.js"></script>
+<script src="assets/load-image/load-image.all.min.js"></script>
+<script src="assets/canvas-to-blob/canvas-to-blob.min.js"></script>
+<script src="assets/jquery-file-upload/js/vendor/jquery.ui.widget.js"></script>
+<script src="assets/jquery-file-upload/js/jquery.iframe-transport.js"></script>
+<script src="assets/jquery-file-upload/js/jquery.fileupload.js"></script>
+<script src="assets/jquery-file-upload/js/jquery.fileupload-process.js"></script>
 <script type="text/javascript">
     function setIwpUpload() {
         $('#fileupload').fileupload({

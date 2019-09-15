@@ -33,7 +33,7 @@
 
 <?php $this->section("section_scripts");
     $this->parent(); ?>
-<script src="/assets/ckeditor/ckeditor.js"></script>
+<script src="assets/ckeditor/ckeditor.js"></script>
 <script type="text/javascript">
     CKEDITOR.replace('icerik', {height: '400px'});
 </script>

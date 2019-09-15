@@ -10,13 +10,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Admin Girişi | <?php echo Wow::get("ayar/site_title"); ?></title>
-    <link rel="stylesheet" href="/assets/style/font-awesome.min.css" type="text/css" media="screen"/>
-    <link href="/assets/themes/adminex/css/style.css" rel="stylesheet">
-    <link href="/assets/themes/adminex/css/style-responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/style/font-awesome.min.css" type="text/css" media="screen"/>
+    <link href="../assets/themes/adminex/css/style.css" rel="stylesheet">
+    <link href="../assets/themes/adminex/css/style-responsive.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-    <script src="/assets/themes/adminex/js/html5shiv.js"></script>
-    <script src="/assets/themes/adminex/js/respond.min.js"></script>
+    <script src="assets/themes/adminex/js/html5shiv.js"></script>
+    <script src="assets/themes/adminex/js/respond.min.js"></script>
     <![endif]-->
 </head>
 
@@ -26,7 +26,7 @@
     <form method="post" class="form-signin">
         <div class="form-signin-heading text-center">
             <h1 class="sign-title">Admin Girişi</h1>
-            <img src="/assets/images/logo.png" alt=""/>
+            <img src="assets/images/logo.png" alt=""/>
         </div>
         <div class="login-wrap">
             <?php
@@ -49,9 +49,9 @@
 
 </div>
 
-<script src="/assets/themes/adminex/js/jquery-1.10.2.min.js"></script>
-<script src="/assets/themes/adminex/js/bootstrap.min.js"></script>
-<script src="/assets/themes/adminex/js/modernizr.min.js"></script>
+<script src="assets/themes/adminex/js/jquery-1.10.2.min.js"></script>
+<script src="assets/themes/adminex/js/bootstrap.min.js"></script>
+<script src="assets/themes/adminex/js/modernizr.min.js"></script>
 <script src='https://www.google.com/recaptcha/api.js'></script>
 <?php if(Wow::has("ayar/googleanalyticscode") != "") { ?>
     <script>

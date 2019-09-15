@@ -13,7 +13,7 @@
         </div>
         <div class="panel-body">
             <div class="hata-text text text-warning"></div>
-            <div id="loader" class="text-center"><img src="/assets/images/loader.svg"/><br/>
+            <div id="loader" class="text-center"><img src="assets/images/loader.svg"/><br/>
                 <p>Talepler Yükleniyor..</p></div>
 
             <table id="talep-table" class="table table-hover general-table" style="display: none;">
