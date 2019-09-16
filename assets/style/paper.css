@@ -123,8 +123,8 @@ label {
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color       : #fff !important;
-    background-color: #4caf50;
+    color       : #444 !important;
+    background-color: #f1f3f4;
 }
 
 .navbar-default .navbar-nav > li.navbar-icon > a:hover, .navbar-default .navbar-nav > li.navbar-icon > a:focus {
