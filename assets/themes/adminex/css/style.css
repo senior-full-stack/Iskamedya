@@ -364,7 +364,18 @@ hr {
     background : rgb(51,51,51);
     color: gray;
 }
-
+.fa.fa-bars {
+    color: gray;
+}
+.fa.fa-bars:hover {
+    background: black;
+    color: white;
+}
+.logo-icon.text-center {
+    background: #444!important;
+    height: 53px;
+    margin-top: -53px;
+}
 .menu-list.nav-hover .sub-menu-list li {
     background: rgb(51,51,51);
 }
