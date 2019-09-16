@@ -2701,7 +2701,6 @@ class Instagram
 			return $timeline;
 		}
 		else if ($timeline['status'] != 'ok') {
-			throw new Exception($timeline['message'] . "\n");
 			return NULL;
 		}
 
