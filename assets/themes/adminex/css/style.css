@@ -191,8 +191,7 @@ hr {
     height     : 100%;
     overflow-y : auto;
     z-index    : 100;
-    background: black;
-    opacity: 0.9;
+    background: rgb(51,51,51);
 }
 
 .sticky-left-side .custom-nav {
@@ -317,7 +316,7 @@ hr {
 }
 
 .custom-nav > li.nav-active > a {
-    background-color      : black;
+    background-color      : rgb(51,51,51);
     background-image : url(../images/minus.png);
     color            : white;
 }
@@ -362,10 +361,13 @@ hr {
     display    : none;
     margin     : 0;
     padding    : 0;
-    background : black;
+    background : rgb(51,51,51);
     color: gray;
 }
 
+.menu-list.nav-hover .sub-menu-list li {
+    background: rgb(51,51,51);
+}
 .custom-nav .sub-menu-list > li > a {
     color              : gray;
     font-size          : 13px;
@@ -449,7 +451,7 @@ h5.left-nav-title {
 
 .left-side-collapsed .custom-nav li a span {
     position   : absolute;
-    background : #65CEA7;
+    background: rgb(51,51,51);
     padding    : 10px;
     left       : 52px;
     top        : 0;
@@ -500,7 +502,7 @@ h5.left-nav-title {
 }
 
 .left-side-collapsed .custom-nav li.nav-hover.active a span {
-    background : #65CEA7;
+    background: rgb(51,51,51);
     color      : #FFFFFF;
 }
 
@@ -569,7 +571,7 @@ h5.left-nav-title {
 }
 
 .toggle-btn:hover {
-    background         : black;
+    background         : rgb(51,51,51);
     color              : #FFFFFF;
 }
 
@@ -589,7 +591,7 @@ h5.left-nav-title {
     -moz-box-shadow    : none;
     -webkit-box-shadow : none;
     box-shadow         : none;
-    border-color       : black;
+    border-color       : rgb(51,51,51);
     color: white;
 }
 
@@ -614,9 +616,8 @@ h5.left-nav-title {
 
 .notification-menu .dropdown-toggle {
     padding               : 12px 10px;
-    border-color          : black;
-    background            : black;
-    opacity: 0.9;
+    border-color          : rgb(51,51,51);
+    background            : rgb(51,51,51);
     -moz-border-radius    : 0;
     -webkit-border-radius : 0;
     border-radius         : 0;
@@ -629,12 +630,11 @@ h5.left-nav-title {
 .notification-menu .dropdown-toggle:active,
 .notification-menu .dropdown-toggle.active,
 .notification-menu .open .dropdown-toggle.dropdown-toggle {
-    background         :black;
+    background         :rgb(51,51,51);
     color              : white;
     -moz-box-shadow    : none;
     -webkit-box-shadow : none;
     box-shadow         : none;
-    opacity: 0.9;
 }
 
 .notification-menu .dropdown-toggle img {
@@ -725,8 +725,7 @@ h5.left-nav-title {
 }
 
 .notification-menu .dropdown-menu-usermenu {
-    background : black;
-    opacity:0.8;
+    background : rgb(51,51,51);
     min-width  : 200px;
 }
 
@@ -858,8 +857,7 @@ h5.left-nav-title {
     left       : 0;
     width      : 240px;
     z-index    : 100;
-    background : black;
-    opacity: 0.7;
+    background : rgb(51,51,51);
 
 }
 
@@ -873,8 +871,7 @@ h5.left-nav-title {
     left     : 240px;
     width    : 100%;
     z-index  : 100;
-    background: black;
-    opacity: 0.7;
+    background: rgb(51,51,51);
 }
 
 .sticky-header .main-content {
