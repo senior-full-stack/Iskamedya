@@ -106,7 +106,7 @@
                 </li>
                 <li  <?php if($controllerName == "Admin/Bakim") { ?> class="active"<?php } ?>>
                     <a href="<?php echo Wow::get("project/adminPrefix"); ?>/bakim"><i class="fa fa-wrench"></i>
-                        Bakım</a>
+                        <span>Bakım</span></a>
                 </li>
                 <li class="menu-list<?php if($controllerName == "Admin/Insta") { ?> nav-active<?php } ?>">
                     <a href="<?php echo Wow::get("project/adminPrefix"); ?>/insta"><i class="fa fa-instagram"></i>
