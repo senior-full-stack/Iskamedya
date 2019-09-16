@@ -146,7 +146,8 @@ button.navbar-toggle {
 }
 
 .nav .fa {
-    font-size : 18px;
+    font-size : 15px;
+    margin-right: 5px;
 }
 
 .nav .badge {

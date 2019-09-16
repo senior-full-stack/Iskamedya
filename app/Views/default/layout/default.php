@@ -84,12 +84,12 @@
             <div class="navbar-collapse collapse navbar-left">
                 <ul class="nav navbar-nav">
                     <li<?php echo $this->route->params["controller"] == "Tools" ? ' class="active"' : ''; ?>>
-                        <a href="/tools"><?php echo $this->translate("instagram/menu/tools"); ?></a></li>
+                        <a href="/tools"><i class="fa fa-wrench"></i><?php echo $this->translate("instagram/menu/tools"); ?></a></li>
                     <li<?php echo $this->route->params["controller"] == "Packages" ? ' class="active"' : ''; ?>>
-                        <a href="/packages"><?php echo $this->translate("instagram/menu/packages"); ?></a></li>
+                        <a href="/packages"><i class="fa fa-folder-o"></i><?php echo $this->translate("instagram/menu/packages"); ?></a></li>
                     <?php if(!$logonPerson->isLoggedIn()) { ?>
                     <li<?php echo $this->route->params["controller"] == "Blog" ? ' class="active"' : ''; ?>>
-                            <a href="/blog">Blog</a></li><?php } ?>
+                            <a href="/blog"><i class="fa fa-files-o"></i>Blog</a></li><?php } ?>
                 </ul>
             </div>
             <?php if($logonPerson->isLoggedIn()) { ?>
